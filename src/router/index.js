@@ -2,8 +2,6 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Error from "../views/Error.vue";
-import TopTracks from "../views/TopTracks.vue";
-import TopArtists from "../views/TopArtists.vue";
 
 Vue.use(VueRouter);
 
@@ -12,11 +10,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
-  },
-  {
-    path: "*",
-    name: "Error",
-    component: Error,
   },
   {
     path: "/about",
@@ -32,6 +25,12 @@ const routes = [
     path: "/top-artists",
     name: "TopArtists",
     component: () => import("../views/TopArtists.vue"),
+  },
+  ,
+  {
+    path: "*",
+    name: "Error",
+    component: Error,
   },
 ];
 

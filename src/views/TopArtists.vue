@@ -1,7 +1,10 @@
 <template>
   <div>
     <vue-headful title="TopArtists" />
-    <artists :artists="artists"></artists>
+    <label for="bySearch">Search your favourite artist</label>
+    <br />
+    <input v-model="search" id="search" name="bySearch" type="search" placeholder="Search..." />
+    <artists :artists="filteredArtists"></artists>
     <FooterCustom></FooterCustom>
   </div>
 </template>
@@ -18,8 +21,23 @@ export default {
   },
   data() {
     return {
-      artists: []
+      artists: [],
+      search: "",
+      artist: []
     };
+  },
+  computed: {
+    filteredArtists() {
+      if (!this.search) {
+        return this.artists.sort((a, b) =>
+          a.listeners < b.listeners ? 1 : -1
+        );
+      } else {
+        return this.artists.filter(artist =>
+          artist.name.toLowerCase().includes(this.search.toLowerCase())
+        );
+      }
+    }
   },
   created() {
     api;
@@ -31,4 +49,8 @@ export default {
 </script>
 
 <style>
+input {
+  color: gold;
+  margin: 1rem;
+}
 </style>

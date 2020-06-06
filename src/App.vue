@@ -48,9 +48,9 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background: pink;
 }
 li {
-  background: linear-gradient(to bottom, pink, purple, violet, indigo);
   color: gold;
   margin: 0.5rem;
   display: flex;
