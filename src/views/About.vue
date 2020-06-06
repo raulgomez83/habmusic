@@ -9,12 +9,12 @@
       <a href="https://www.npmjs.com/package/axios">AXIOS</a> library. 👇
     </h2>
     <img src="../assets/fotomia.jpg" alt="mi foto" />
-    <p>
+    <h3>
       If you want more recent information push
       <a
         href="https://linkedin.com/in/raúl-gómez-romero-1bb4a753"
       >here.</a>
-    </p>
+    </h3>
     <FooterCustom></FooterCustom>
   </div>
 </template>
@@ -26,6 +26,9 @@ export default {
 };
 </script>
 <style>
+.about {
+  color: rgb(60, 0, 119);
+}
 img {
   width: 6rem;
   margin: 2rem;

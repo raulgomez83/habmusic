@@ -49,6 +49,9 @@ export default {
 </script>
 
 <style>
+label {
+  color: lime;
+}
 input {
   color: gold;
   margin: 1rem;

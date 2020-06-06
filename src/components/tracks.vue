@@ -26,10 +26,10 @@ li {
   width: 8rem;
   height: 9rem;
 }
-.listeners {
-  color: gold;
-}
 .artist {
   color: rebeccapurple;
+}
+.listeners {
+  color: lime;
 }
 </style>

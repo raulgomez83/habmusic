@@ -12,12 +12,13 @@
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 * {
   margin: 0 auto;
   padding: 0;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: megrim;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -29,6 +30,7 @@
 
 #nav {
   padding: 5rem;
+  color: lime;
 }
 
 a {
@@ -53,7 +55,7 @@ ul {
   justify-content: center;
 }
 li {
-  color: lime;
+  color: gold;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -61,6 +63,6 @@ li {
   align-items: center;
   font-size: 1.1rem;
   font-weight: bold;
-  background: rgba(102, 51, 151, 0.1);
+  background: rgba(102, 51, 151, 0.3);
 }
 </style>

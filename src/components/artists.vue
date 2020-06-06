@@ -23,8 +23,11 @@ export default {
 
 
 <style scoped>
+a {
+  color: gold;
+}
 li {
-  width: 10rem;
+  width: 15rem;
 }
 p {
   color: lime;
