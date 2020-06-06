@@ -27,9 +27,9 @@ li {
   height: 9rem;
 }
 .listeners {
-  color: lime;
+  color: gold;
 }
 .artist {
-  color: violet;
+  color: rebeccapurple;
 }
 </style>

@@ -24,9 +24,12 @@ export default {
 
 <style scoped>
 li {
-  width: 15rem;
+  width: 10rem;
 }
 p {
   color: lime;
+}
+img {
+  opacity: 0.4;
 }
 </style>

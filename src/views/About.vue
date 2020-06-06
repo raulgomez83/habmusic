@@ -30,4 +30,7 @@ img {
   width: 6rem;
   margin: 2rem;
 }
+a {
+  color: lime;
+}
 </style>

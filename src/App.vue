@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h1>🧟‍♀️🍄 H Radio 🍄👽</h1>
     <div id="nav">
+      <h1>🧟‍♀️🍄 H Radio 🍄👽</h1>
       <router-link to="/">Home</router-link>|
       <router-link to="/top-tracks">Toptracks</router-link>|
       <router-link to="/top-artists">Topartists</router-link>|
@@ -15,7 +15,6 @@
 * {
   margin: 0 auto;
   padding: 0;
-  background-color: purple;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -23,10 +22,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: gold;
+  background-image: url(./assets/fondo.jpg);
+  background-repeat: none;
+  background-size: cover;
 }
 
 #nav {
-  padding: 30px;
+  padding: 5rem;
 }
 
 a {
@@ -36,11 +38,12 @@ a {
 }
 
 a.router-link-exact-active {
-  color: pink;
+  color: violet;
 }
 h1 {
   color: gold;
   text-shadow: 2px 2px lime;
+  margin: 1rem;
 }
 ul {
   list-style: none;
@@ -48,10 +51,9 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background: pink;
 }
 li {
-  color: gold;
+  color: lime;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -59,5 +61,6 @@ li {
   align-items: center;
   font-size: 1.1rem;
   font-weight: bold;
+  background: rgba(102, 51, 151, 0.1);
 }
 </style>
