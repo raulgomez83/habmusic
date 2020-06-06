@@ -2,7 +2,7 @@
   <div class="about">
     <vue-headful title="About" />
     <h2>
-      Hello,this super-project was created by me using using
+      Hello,this super-project was created by me using
       <a
         href="https://www.last.fm/api/?lang=es"
       >Last FM API</a> and

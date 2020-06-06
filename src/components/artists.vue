@@ -5,7 +5,7 @@
         <li v-for="artist in artists" :key="artist.id">
           <a :href="artist.url">{{artist.name}}</a>
           <img :src="artist.image[2]['#text']" />
-          {{artist.listeners}} listeners
+          <p>{{artist.listeners}} listeners</p>
         </li>
       </ul>
     </div>
@@ -24,6 +24,9 @@ export default {
 
 <style scoped>
 li {
-  width: 10rem;
+  width: 15rem;
+}
+p {
+  color: lime;
 }
 </style>

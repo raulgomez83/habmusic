@@ -25,7 +25,7 @@ async function getArtists() {
 async function getTopTracks() {
   try {
     const responseTrack = await axios.get(`${BASE_URL}${URL_TRACK}`);
-
+    console.log(responseTrack);
     return responseTrack;
   } catch (error) {
     console.error(error);

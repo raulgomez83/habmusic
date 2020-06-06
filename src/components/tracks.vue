@@ -4,7 +4,8 @@
       <ul>
         <li v-for="track in tracks" :key="track.id">
           <a :href="track.url">{{ track.name }}</a>
-          <p>{{ track.listeners }} listeners</p>
+          <p class="artist">{{track.artist.name}}</p>
+          <p class="listeners">{{ track.listeners }} listeners</p>
         </li>
       </ul>
     </div>
@@ -15,8 +16,8 @@
 export default {
   name: "tracks",
   props: {
-    tracks: Array,
-  },
+    tracks: Array
+  }
 };
 </script>
 
@@ -24,5 +25,11 @@ export default {
 li {
   width: 8rem;
   height: 9rem;
+}
+.listeners {
+  color: lime;
+}
+.artist {
+  color: violet;
 }
 </style>
