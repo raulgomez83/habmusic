@@ -27,9 +27,10 @@ export default {
     };
   },
   computed: {
+    /* función de búsqueda y filtrado */
     filteredArtists() {
       if (!this.search) {
-        return this.artists.sort((a, b) =>
+        return this.artists.sort((a, b /* ordena por número de oyentes */) =>
           a.listeners < b.listeners ? 1 : -1
         );
       } else {

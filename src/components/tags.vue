@@ -3,6 +3,7 @@
     <ul>
       <li v-for="tag in tags" :key="tag.id">
         <a :href="tag.url">{{tag.name}}</a>
+        <!-- url dinámica -->
       </li>
     </ul>
   </div>

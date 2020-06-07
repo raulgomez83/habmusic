@@ -14,6 +14,8 @@ const URL_TRACK =
 const URL_TAG =
   "/2.0/?method=chart.gettoptags&api_key=" + apiKey + "&format=json";
 
+//Escribimos las funciones qu enos van a dar los datos de cada vista
+
 async function getArtists() {
   try {
     const response = await axios.get(`${BASE_URL}${URL_GEO}`);
@@ -25,7 +27,6 @@ async function getArtists() {
 async function getTopTracks() {
   try {
     const responseTrack = await axios.get(`${BASE_URL}${URL_TRACK}`);
-    console.log(responseTrack);
     return responseTrack;
   } catch (error) {
     console.error(error);

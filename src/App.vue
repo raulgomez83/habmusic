@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      <!--  Cabecera común a todas las vistas -->
       <h1>🧟‍♀️🍄 H Radio 🍄👽</h1>
       <router-link to="/">Home</router-link>|
       <router-link to="/top-tracks">Toptracks</router-link>|
@@ -12,6 +13,7 @@
 </template>
 
 <style>
+/* Estilos generales de la web */
 @import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 * {
   margin: 0 auto;
