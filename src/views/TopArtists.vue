@@ -54,6 +54,7 @@ label {
   color: lime;
 }
 input {
+  background: purple;
   color: gold;
   margin: 1rem;
 }
